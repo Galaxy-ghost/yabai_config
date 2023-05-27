@@ -16,10 +16,12 @@ source ~/.config/yabai/initialization.sh
 yabai -m signal --add event=display_added action="~/.config/yabai/initialization.sh"
 yabai -m signal --add event=display_removed action="~/.config/yabai/initialization.sh"
 yabai -m signal --add event=window_focused action="~/.config/yabai/change-window-border-color-when-window-focused.sh"
+yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
+yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
+yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
 yabai -m signal --add event=window_destroyed action="~/.config/yabai/auto-focus-to-new-one-when-window-destroyed.sh 2> /dev/null"
 yabai -m signal --add event=application_hidden action="~/.config/yabai/auto-focus-to-new-one-when-window-destroyed.sh 2> /dev/null"
 yabai -m signal --add event=window_minimized action="~/.config/yabai/auto-focus-to-new-one-when-window-destroyed.sh 2> /dev/null"
-
 
 $HOME/.config/yabai/create_spaces.sh
 
