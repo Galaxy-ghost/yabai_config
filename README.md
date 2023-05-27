@@ -1,7 +1,7 @@
 ## Keyboard shortcuts
 ### Yabai
 #### Changing focus
-<kbd>alt</kbd> + <kbd>hjkl</kbd>
+<kbd>alt</kbd> + <kbd>ijkl</kbd>
 
 ### focus
 | Action       | Key Combination                                  |
