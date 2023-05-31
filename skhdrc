@@ -32,7 +32,7 @@ shift + alt - 0 : yabai -m space --balance
 # shift + alt - right  : yabai -m window --grid 1:2:1:0:1:1
 
 # create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
-alt - c : ~/.config/yabai/create_new_space.sh
+alt - c : ~/.config/yabai/create_new_space.sh 1
 
 # create desktop and follow focus - uses jq for parsing json (brew install jq)
 cmd + alt - c : ~/.config/yabai/create_new_space.sh

@@ -23,7 +23,8 @@ change_random_wallpaper() {
   if [ -d $RANDOM_FOLDER ];
   then
     # 分批打乱两次
-    wallpaper=$(ls $RANDOM_FOLDER | shuf -n 5 | shuf -n 1)
+    # wallpaper=$(ls $RANDOM_FOLDER | shuf -n 5 | shuf -n 1)
+    wallpaper=$(ls $RANDOM_FOLDER | shuf -n 1)
     echo "change new wallpaper ${wallpaper}, display: ${CURRENT_DESKTOP}"
 
     osascript -e "

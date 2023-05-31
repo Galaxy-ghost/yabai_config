@@ -18,4 +18,4 @@ then
 fi
 
 yabai -m space --focus ${spaceIndex}
-~/.config/yabai/change-random-wallpaper.sh
+# ~/.config/yabai/change-random-wallpaper.sh
