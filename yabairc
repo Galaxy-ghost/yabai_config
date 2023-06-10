@@ -79,8 +79,10 @@ yabai -m rule --add app="^IntelliJ IDEA$" manage=off
 yabai -m rule --add app="^IntelliJ IDEA$" title="( – )" manage=on
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 yabai -m rule --add label="CleanMyMac" app="^CleanMyMac$"  manage=off
-yabai -m rule --add label="Clion" app="^Clion$"  manage=off
+# yabai -m rule --add label="Clion" app="^Clion$"  manage=off
 yabai -m rule --add label="Discord" app="^Discord$"  manage=off
 yabai -m rule --add label="OneDrive" app="^OneDrive$"  manage=off
+yabai -m rule --add app="^Clion$" manage=off
+yabai -m rule --add app="^Clion$" title="( – )" manage=on
 
 echo "yabai configuration loaded.."
